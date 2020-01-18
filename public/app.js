@@ -25,7 +25,7 @@ $('#submit').on('click', function(event) {
 
     $.post('api/friends', input)
     .done(function(data) {
-        // console.log(JSON.stringify(data));
+        console.log(JSON.stringify(data));
 
         $('#matchName').html(data.matchName);
         $("#matchImage").attr("src", data.matchImage);
