@@ -29,9 +29,9 @@ module.exports = function(app){
             var min = Math.min(...scoresArr); //find lowest number in scoresArr -- the match
             console.log(scoresArr, "Minimum Difference: ", min)
       
-            if (scoresArr[i] === min){ //THIS MAY BE COMPLETELY WRONG
+            if (scoresArr[i] === min){ //THIS MAY BE COMPLETELY WRONG, NOT SURE
                 match = friendList[i].name;
-                matchImg = friendList[i].photo;
+                matchImg = friendList[i].photo; //★★★★★★★★★
                 return match, matchImg;
             }
         }
