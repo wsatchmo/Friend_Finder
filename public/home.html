@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder</title>
-    <link rel="stylesheet" href="css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--MATERIALIZE-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
@@ -25,21 +24,27 @@
     </header>
     
 	<main>
-        <div class="row">
-            <div class="col">
-                <div>
-                    <h1>Friend Finder</h1>
-                    <div class="divider"></div>
-                    <h3>You're just a few questions away from a new friend!</h3>
-                    <a href="survey.html">
-                        <button class="green accent-4 btn waves-effect waves-light" type="submit" name="action">Start Survey</button>
-                    </a>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <h1>Friend Finder</h1>
+                        <div class="divider"></div>
+                        <h3>You're just a few questions away from a new friend!</h3>
+                        <br>
+                        <p>Friend Finder is a fun way to find new acquaintances with similar interests</p>
+                        <p>Just fill out the survey and click submit, and you'll be matched up with a new bud based on how your answers compare!</p>
+                        <br>
+                        <a class="right" href="survey.html">
+                            <button class="green accent-4 btn waves-effect waves-light" type="submit" name="action" style="margin-bottom: 100px;">Start Survey</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     
-    <footer class="page-footer green accent-3">
+    <footer class="page-footer green accent-3" style="bottom: 0px; position: fixed; width: 100%; z-index: 2;">
 		<div class="footer-copyright">
 			<div class="container center">
 				<a class="white-text" href="https://github.com/wsatchmo">© 2020 wsatchmo</a>

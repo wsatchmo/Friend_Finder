@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder Survey</title>
-    <link rel="stylesheet" href="css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--MATERIALIZE-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
@@ -15,7 +14,7 @@
     <header>
 		<nav>
 			<div class="nav-wrapper green accent-3">
-				<a href="#" class="brand-logo" id="logo">Friend Finder</a>
+				<a href="home.html" class="brand-logo" id="logo">Friend Finder</a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="home.html">Home</a></li>
 					<li><a href="api/friends">Friends List</a></li>
@@ -36,12 +35,12 @@
 
                         <div class="input-field col m6">
                             <h6>Name (Required)</h6>
-                            <input type="text" class="validate" placeholder="John Smith">
+                            <input id="user" type="text" class="validate" placeholder="John Smith">
                         </div>
 
                         <div class="input-field col s6">
                             <h6>Link to your Photo (Required)</h6>
-                            <input type="text" class="validate" placeholder="https://your-image-here">
+                            <input id="photoURL" type="text" class="validate" placeholder="https://your-image-here">
                         </div>
 
                         <!-- SURVEY START -->
@@ -199,7 +198,7 @@
                         <!--END OF QUESTIONS-->
                     </div>
                 </div>
-                <button class="green accent-4 btn waves-effect waves-light right" type="submit" name="submit">Submit Survey</button>
+                <button id="submit" class="green accent-4 btn waves-effect waves-light right" type="submit" name="submit">Submit Survey</button>
             </div>
         </div>
 	</main>
@@ -211,11 +210,16 @@
 			</div>
 		</div>
     </footer>  
+
+    <!--MODAL-->
+    <div id="matchModal" class="modal">
+		<div class="modal-content">
+			<h4>Your Friend Match</h4>
+			<h5 id="matchName"></h5>
+			<img id="matchImage" class="materialboxed" width="650" src="">
+		</div>
+	</div>
     
-    <script type="text/javascript">
-    $(document).ready(function() {
-			$('select').material_select(); //DROPDOWN JS
-		});
-    </script>
+    <script src="../data/app.js" type="text/javascript"></script>
 </body>
 </html>
