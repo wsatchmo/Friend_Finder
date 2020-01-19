@@ -9,6 +9,7 @@
 ###### - Based on your answers, you will be given a score and and matched with the friend with the closest score
 ###### - Upon clicking submit, your answers are recorded into the friends database for future matches 
 ###### - Users can also click the 'Friends List' section int he upper right corner to see a list of all possible friends
+###### - CREDIT: Confetti effect courtesy of [mathusummut](https://www.cssscript.com/confetti-falling-animation/) 
 
 ```diff
 - Heroku Deployment -
