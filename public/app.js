@@ -3,6 +3,7 @@ $(document).ready(function() {
 });
 
 $('#submit').on('click', function(event) {
+    //console.log("SUBMIT");
     event.preventDefault();
 
     // Gather user inputs
@@ -24,12 +25,14 @@ $('#submit').on('click', function(event) {
     };
 
     $.post('api/friends', input)
-    .done(function(data) {
+    .then(function(data) {
         console.log(JSON.stringify(data));
 
-        $('#matchName').html(data.matchName);
-        $("#matchImage").attr("src", data.matchImage);
-
-        $('#matchModal').modal('open');
+        $('#matchName').val(data.match);
+        $("#matchImage").attr("src", data.matchImg);
+        console.log("match: ", data.match);
+        console.log("matchImg: ", data.matchImg);
+        $('#matchModal').modal();
     });
 });
+

@@ -5,6 +5,7 @@ var friendList = require("../data/friends.js"); //friends list dependency
 module.exports = function(app){
     app.get("/api/friends", function(req, res) {
         res.json(friendList); //list of friend entries
+        console.log("friendList: ", friendList)
     });
 
     app.post("/api/friends", function(req, res){
@@ -34,12 +35,13 @@ module.exports = function(app){
                 matchImg = friendList[i].photo; //★★★★★★★★★
                 console.log("match: ", match);
                 console.log("matchImg: ", matchImg);
-                return match, matchImg;
+                //post match & match image to modal
+       
             }
         }
 
         friendList.push(input);//adds user input to list
-        console.log("friendList: " + friendList);
+        console.log("friendList: ", friendList);
         res.json({status: "OK", match: match, matchImg: matchImg});
     })
 }
