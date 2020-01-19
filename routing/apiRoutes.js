@@ -3,7 +3,7 @@ var friendList = require("../data/friends.js"); //friends list dependency
 module.exports = function(app){
     app.get("/api/friends", function(req, res) { //get the friends api
         res.json(friendList); //list of friend entries
-        console.log("friendList: ", friendList)
+        //console.log("friendList: ", friendList)
     });
 
     app.post("/api/friends", function(req, res){ //post the friends api
@@ -26,8 +26,8 @@ module.exports = function(app){
             scoresArr.push(diffInstance); //converting them to absolute. push these to the acores array
         
             var min = Math.min(...scoresArr); //find lowest number in scoresArr -- the match
-            console.log("scoresArr: ", scoresArr);
-            console.log("Minimum Difference: ", min);
+            //console.log("scoresArr: ", scoresArr);
+            //console.log("Minimum Difference: ", min);
         
             if (scoresArr[i] === min){ //while looping, if you find the same score of min...
                 match = friendList[i].name; //use the associated user information for the modal
@@ -39,7 +39,7 @@ module.exports = function(app){
         }        
 
         friendList.push(input); //adds user input to list
-        console.log("friendList: ", friendList);
+        //console.log("friendList: ", friendList);
         res.json({status: "OK", match: match, matchImg: matchImg});
     })
 }

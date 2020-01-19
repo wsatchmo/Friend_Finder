@@ -215,3 +215,4 @@ function updateParticles() {
 	}
 }
 
+//Credit -- mathusummut https://www.cssscript.com/confetti-falling-animation/
