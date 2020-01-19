@@ -19,7 +19,7 @@ This app is deployed on Heroku at https://tranquil-caverns-62955.herokuapp.com/ 
 ```diff
 ! A Note !
 ```
-##### Be sure to install the Node packages in the command line:
+##### If you download this project for use, remember to install the Node packages in the command line:
 
 ```js
 cd friend-finder //Navigate to the correct directory
