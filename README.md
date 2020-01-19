@@ -8,7 +8,7 @@
 ###### - Start the survey and answer all 10 questions, then click the submit button
 ###### - Based on your answers, you will be given a score and and matched with the friend with the closest score
 ###### - Upon clicking submit, your answers are recorded into the friends database for future matches 
-###### - Users can also click the 'Friends List' section int he upper right corner to see a list of all possible friends
+###### - Users can also click the 'Friends List' section in the upper right corner to see a list of all registered friends
 ###### - CREDIT: Confetti effect courtesy of [mathusummut](https://www.cssscript.com/confetti-falling-animation/) 
 
 ```diff
