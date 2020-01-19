@@ -1,5 +1,21 @@
 var friends = [
     {
+        name: "Bruce",
+        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bruce_Lee_1973.jpg/449px-Bruce_Lee_1973.jpg",
+        scores: [
+            '4',
+            '5',
+            '5',
+            '5',
+            '5',
+            '5',
+            '2',
+            '1',
+            '3',
+            '5'
+        ]
+    },
+    {
         name: "Jim",
         photo: "https://www.dailyherald.com/storyimage/DA/20140308/entlife/303089999/AR/0/AR-303089999.jpg&updated=201403071713&MaxW=900&maxH=900&noborder&Q=80",
         scores: [

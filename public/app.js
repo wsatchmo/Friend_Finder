@@ -27,12 +27,12 @@ $('#submit').on('click', function(event) {
     $.post('api/friends', input)
     .then(function(data) {
         console.log(JSON.stringify(data));
-
-        $('#matchName').val(data.match);
+        $('.modal').modal(); //initialize modal
+        $('#matchName').html(data.match);
         $("#matchImage").attr("src", data.matchImg);
         console.log("match: ", data.match);
         console.log("matchImg: ", data.matchImg);
-        $('#matchModal').modal();
+        $('#matchModal').modal("open");
     });
 });
 
