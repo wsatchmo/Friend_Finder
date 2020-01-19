@@ -32,6 +32,22 @@ var friends = [
         ]
     },
     {
+        name: 'Sam Which',
+        photo: 'https://images.unsplash.com/photo-1553909489-cd47e0907980?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80',
+        scores: [
+            '1',
+            '4',
+            '5',
+            '5',
+            '1',
+            '3',
+            '1',
+            '2',
+            '1',
+            '2'
+        ]
+    },
+    {
         name: "Bruce",
         photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bruce_Lee_1973.jpg/449px-Bruce_Lee_1973.jpg",
         scores: [
