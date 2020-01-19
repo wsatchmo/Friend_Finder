@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('select').material_select(); //DROPDOWN JS
+    $('select').material_select(); //javascript for dropdowns
 });
 
 $('#submit').on('click', function(event) {
@@ -24,8 +24,9 @@ $('#submit').on('click', function(event) {
         ]
     };
 
+    //post input to friends api
     $.post('api/friends', input)
-    .then(function(data) {
+    .then(function(data) { //then display the modal
         console.log(JSON.stringify(data));
         $('.modal').modal(); //initialize modal
         $('#matchName').html(data.match);

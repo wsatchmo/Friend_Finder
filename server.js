@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require(path.join(__dirname, 'routing/apiRoutes'))(app);
+require(path.join(__dirname, 'routing/apiRoutes'))(app); //pathing for routes
 require(path.join(__dirname, 'routing/htmlRoutes'))(app);
 
 // start server listening
